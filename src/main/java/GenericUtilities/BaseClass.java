@@ -16,6 +16,8 @@ import com.max.ObjectRepo.FacebookPage;
 import com.max.ObjectRepo.FavoritePage;
 import com.max.ObjectRepo.HomePage;
 import com.max.ObjectRepo.LoginPage;
+import com.max.ObjectRepo.OfferZonePage;
+import com.max.ObjectRepo.ProductDetailsPage;
 import com.max.ObjectRepo.StoreLocatorPage;
 
 import io.appium.java_client.android.AndroidDriver;
@@ -37,6 +39,8 @@ public class BaseClass {
 	public CartPage cp;
 	public StoreLocatorPage slp;
 	public FacebookPage fbp;
+	public OfferZonePage ozp;
+	public ProductDetailsPage pdp;
 	
 	@BeforeSuite
 	public void startServer() {
@@ -77,6 +81,9 @@ public class BaseClass {
 		cp = new CartPage(driver);
 		slp = new StoreLocatorPage(driver);
 		fbp = new FacebookPage(driver);
+		ozp=new OfferZonePage(driver);
+		pdp=new ProductDetailsPage(driver);
+		hp.ClickOnHome();
 	}
 	
 	@AfterClass
