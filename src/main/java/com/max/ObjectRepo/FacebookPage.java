@@ -4,14 +4,14 @@ import org.openqa.selenium.support.PageFactory;
 
 import io.appium.java_client.android.AndroidDriver;
 
-public class StoreLocatorPage {
+public class FacebookPage {
 
 	AndroidDriver driver;
-	public StoreLocatorPage(AndroidDriver driver) {
+	public FacebookPage(AndroidDriver driver) {
 		PageFactory.initElements( driver, this);
 	}
 	
-	public void store() {
-
+	public void facebook() {
+		
 	}
 }
