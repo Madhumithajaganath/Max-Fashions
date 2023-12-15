@@ -63,7 +63,7 @@ public class GestureUtility {
 	
 	public void scroll(String value) {
 		driver.findElement(AppiumBy.androidUIAutomator
-		("new UiScrollable(new UiSelector()).scrollIntoView(text(\""+value+"\"));"));
+		("new UiScrollable(new UiSelector()).scrollIntoView(text(\""+value+"\"));")).click();;
 		
 	}
 	
