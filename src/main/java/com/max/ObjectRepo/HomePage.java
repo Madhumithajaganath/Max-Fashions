@@ -10,12 +10,6 @@ import net.bytebuddy.asm.Advice.This;
 public class HomePage {
 
 	AndroidDriver driver;
-	
-	@FindBy(id = "com.applications.max:id/navigation_homepage_common_dest")
-	private WebElement homebtn;
-	
-	
-	
 	public HomePage(AndroidDriver driver) {
 		PageFactory.initElements( driver, this);
 	}
