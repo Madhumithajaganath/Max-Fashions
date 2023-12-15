@@ -9,6 +9,7 @@ import io.appium.java_client.android.AndroidDriver;
 public class StoreLocatorPage {
 
 	AndroidDriver driver;
+
 	
 	@FindBy(xpath = "//android.widget.TextView[@text='Find our stores']")
 	private WebElement findStores;
