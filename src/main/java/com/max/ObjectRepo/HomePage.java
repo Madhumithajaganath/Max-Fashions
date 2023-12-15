@@ -9,7 +9,6 @@ import io.appium.java_client.android.AndroidDriver;
 public class HomePage {
 
 	AndroidDriver driver;
-	
 	@FindBy(xpath="//android.widget.Button[@text='Login']")
 	private WebElement login;
 	
@@ -31,7 +30,7 @@ public class HomePage {
 	public HomePage(AndroidDriver driver) 
 	{
 		this.driver=driver;
-		PageFactory.initElements( driver, this);
+PageFactory.initElements( driver, this);
 	}
 
 	public WebElement getHome() {
