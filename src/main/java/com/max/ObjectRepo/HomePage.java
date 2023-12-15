@@ -34,7 +34,7 @@ public class HomePage {
 	public HomePage(AndroidDriver driver) 
 	{
 		this.driver=driver;
-PageFactory.initElements( driver, this);
+		PageFactory.initElements( driver, this);
 	}
 
 	public WebElement getHome() {

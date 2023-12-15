@@ -11,12 +11,19 @@ public class CategoriesPage {
 	AndroidDriver driver;
 	
 	public CategoriesPage(AndroidDriver driver) {
+		this.driver=driver;
 		PageFactory.initElements( driver, this);
 		
 	}
 	
 	@FindBy(id = "com.applications.max:id/navigation_explore_dest")
 	private WebElement categorybtn;
+	
+	@FindBy(id = "com.applications.max:id/text_item_search")
+	private WebElement searchbar;
+	
+	@FindBy(xpath = "(//android.widget.RelativeLayout[@resource-id='com.applications.max:id/search_result_item'])[1]")
+	private WebElement item;
 	
 	
 	

@@ -22,18 +22,21 @@ public class ProductDetailsPage
 	  PageFactory.initElements(driver, this);
   }
 
-public WebElement getAddtoBasket() {
-	return addtoBasket;
-}
+  	public WebElement getAddtoBasket() 
+  	{
+  		return addtoBasket;
+  	}
 
-public WebElement getSelectsize() {
-	return selectsize;
-}
+  	public WebElement getSelectsize() 
+  	{
+  		return selectsize;
+  	}
 
 
-public AndroidDriver getDriver() {
-	return driver;
-}
+  	public AndroidDriver getDriver() 
+  	{
+  		return driver;
+  	}
 
 public void clickonAddtoBasket()
 {

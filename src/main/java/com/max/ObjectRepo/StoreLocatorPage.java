@@ -30,7 +30,9 @@ public class StoreLocatorPage {
 	private WebElement storeAddress;
 	
 	
-	public StoreLocatorPage() {
+	public StoreLocatorPage(AndroidDriver driver) 
+	{
+		this.driver=driver;
 		PageFactory.initElements( driver, this);
 	}
 	
