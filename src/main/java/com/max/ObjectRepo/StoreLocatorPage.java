@@ -10,35 +10,31 @@ public class StoreLocatorPage {
 
 	AndroidDriver driver;
 	
-	@FindBy(id="com.applications.max:id/favSearch")
-	private WebElement searchButton;
+	@FindBy(xpath = "//android.widget.TextView[@text='Find our stores']")
+	private WebElement findStores;
 	
-	@FindBy(xpath = "//android.widget.ImageView[@resource-id='com.applications.max:id/imageFavRemove']")
-	private WebElement closeButton;
+	@FindBy(id="com.applications.max:id/spinner_store_region")
+	private WebElement stateSpinner;
 	
-	@FindBy(xpath = "//android.widget.TextView[@text='ADD TO BASKET']")
-	private WebElement addToBasket;
+	@FindBy(id="com.applications.max:id/city_spinner")
+	private WebElement citySpinner;
 	
-	@FindBy(xpath = "//android.widget.Spinner[@resource-id='com.applications.max:id/spinnerSize']")
-	private WebElement selectdropdown;
+	@FindBy(xpath = "//android.widget.CheckedTextView[@text='TAMIL NADU']")
+	private WebElement state;
 	
-	@FindBy(xpath = "//android.widget.CheckedTextView[@text='XS']")
-	private WebElement selectSize;
+	@FindBy(xpath = "//android.widget.CheckedTextView[@text='Hosur']")
+	private WebElement city;
 	
-	@FindBy(xpath = "//android.widget.TextView[@text='REMOVE ALL']")
-	private WebElement removeAll;
+	@FindBy(id = "com.applications.max:id/lnrStoreInfo")
+	private WebElement storeAddress;
 	
-	@FindBy(id="android:id/button1")
-	private WebElement OKButton;
-	
-	@FindBy(id="android:id/button2")
-	private WebElement cancelButton;
 	
 	public StoreLocatorPage() {
 		PageFactory.initElements( driver, this);
 	}
 	
 	public void store() {
-		
+		String address = storeAddress.getText();
+		System.out.println(address);
 	}
 }
