@@ -38,8 +38,68 @@ public class FavoritePage {
 		PageFactory.initElements( driver, this);
 	}
 	
-	public void favorite() {
-		
+	public void select() {
+		selectdropdown.click();
+		selectSize.click();
 	}
+	
+	public void cancel() {
+		closeButton.click();
+		cancelButton.click();
+	}
+	
+	public void ok() {
+		closeButton.click();
+		OKButton.click();
+	}
+	
+	public void removeAll() {
+		removeAll.click();
+	}
+
+	public AndroidDriver getDriver() {
+		return driver;
+	}
+
+	public WebElement getSearchButton() {
+		return searchButton;
+	}
+
+	public WebElement getCloseButton() {
+		return closeButton;
+	}
+
+	public WebElement getAddToBasket() {
+		return addToBasket;
+	}
+
+	public WebElement getSelectdropdown() {
+		return selectdropdown;
+	}
+
+	public WebElement getSelectSize() {
+		return selectSize;
+	}
+
+	public WebElement getRemoveAll() {
+		return removeAll;
+	}
+
+	public WebElement getOKButton() {
+		return OKButton;
+	}
+
+	public WebElement getCancelButton() {
+		return cancelButton;
+	}
+	
+	public void addingProduct()
+	{
+		selectdropdown.click();
+		selectSize.click();
+		addToBasket.click();
+	}
+	
+	
 	
 }
