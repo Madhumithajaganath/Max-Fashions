@@ -84,6 +84,7 @@ public class StoreLocatorPage {
 		
 		driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Find our stores\"));"));
 		int count = storeAddress.size();
+		System.out.println("Getting the address");
 		for(int i=0;i<count;i++)
 		{
 		String address = storeAddress.get(i).getText();
@@ -94,5 +95,6 @@ public class StoreLocatorPage {
 			    "percent", 0.75
 			));
 		}
+		
 	}
 }
