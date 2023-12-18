@@ -12,6 +12,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 
 import com.max.ObjectRepo.CartPage;
+import com.max.ObjectRepo.CategoriesPage;
 import com.max.ObjectRepo.FacebookPage;
 import com.max.ObjectRepo.FavoritePage;
 import com.max.ObjectRepo.HomePage;
@@ -41,6 +42,7 @@ public class BaseClass {
 	public FacebookPage fbp;
 	public OfferZonePage ozp;
 	public ProductDetailsPage pdp;
+	public CategoriesPage cat;
 	
 	@BeforeSuite
 	public void startServer() {
@@ -60,13 +62,13 @@ public class BaseClass {
 		String automation = futil.dataFromPropertyFile("AUTOMATION_NAME");
 		
 		dc.setCapability(MobileCapabilityType.PLATFORM_NAME, platform);
-		dc.setCapability(MobileCapabilityType.DEVICE_NAME, "");
+		dc.setCapability(MobileCapabilityType.DEVICE_NAME, "Madhumitha jaganath");
 		dc.setCapability(MobileCapabilityType.AUTOMATION_NAME, automation);
-		dc.setCapability(MobileCapabilityType.UDID, "");
-		dc.setCapability(MobileCapabilityType.BROWSER_NAME, "chrome");
+		dc.setCapability(MobileCapabilityType.UDID, "RZ8T31JR73N");
+		//dc.setCapability(MobileCapabilityType.BROWSER_NAME, "chrome");
 		
-		dc.setCapability("appPackage", "");
-		dc.setCapability("appActivity", "");
+		dc.setCapability("appPackage", "com.applications.max");
+		dc.setCapability("appActivity", "com.landmarkgroup.landmarkshops.bx2.launcher.LauncherActivity");
 		
 		URL u = new URL("http://localhost:4723");
 		driver = new AndroidDriver(u,dc);
@@ -83,6 +85,7 @@ public class BaseClass {
 		fbp = new FacebookPage(driver);
 		ozp=new OfferZonePage(driver);
 		pdp=new ProductDetailsPage(driver);
+		cat=new CategoriesPage(driver);
 		hp.ClickOnHome();
 	}
 	

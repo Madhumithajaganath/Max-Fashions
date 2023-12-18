@@ -5,6 +5,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import GenericUtilities.GestureUtility;
+import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
 
 public class HomePage {
@@ -81,11 +82,11 @@ public class HomePage {
 	{
 		Favourites.click();
 	}
-	public void offerZone(String text)
+	public void offerZone()
 	
 	{
-	    GestureUtility gutil=new GestureUtility(driver);
-	    gutil.scroll(text);
+		driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Bestsellers\"));"));	
+	    //gutil.scroll(text);
 	    flat199.click();
 	}
 }

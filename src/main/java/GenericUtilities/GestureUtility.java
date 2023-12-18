@@ -49,7 +49,7 @@ public class GestureUtility {
 		
 	}
 	
-	public void swipe(WebElement element, double percentage, int left, int top, int height, int width) {
+	public void swipe(WebElement element, double percentage, int left, int top, int height, int width,String direction) {
 		((JavascriptExecutor)driver).executeScript("mobile:swipeGesture", ImmutableMap.of
 		("left" ,left, "top", top, "height",height,"width",width));
 		
@@ -63,8 +63,7 @@ public class GestureUtility {
 	
 	public void scroll(String value) {
 		driver.findElement(AppiumBy.androidUIAutomator
-		("new UiScrollable(new UiSelector()).scrollIntoView(text(\""+value+"\"));")).click();;
-		
+		("new UiScrollable(new UiSelector()).scrollIntoView(text(\""+value+"\"));"));
 	}
 	
 	public void searchAction() {

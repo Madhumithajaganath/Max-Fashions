@@ -1,9 +1,6 @@
 package com.max.ObjectRepo;
 
 import java.util.List;
-
-import org.openqa.selenium.Dimension;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -38,7 +35,6 @@ public class StoreLocatorPage {
 	
 	@FindBy(id = "com.applications.max:id/lnrStoreInfo")
 	private List<WebElement> storeAddress;
-	
 
 	public StoreLocatorPage(AndroidDriver driver) 
 	{
@@ -76,6 +72,7 @@ public class StoreLocatorPage {
 	}
 
 	public void store() {
+
 		findStores.click();
 		stateSpinner.click();
 		citySpinner.click();
@@ -95,6 +92,5 @@ public class StoreLocatorPage {
 			    "percent", 0.75
 			));
 		}
-		
 	}
 }
