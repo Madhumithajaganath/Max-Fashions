@@ -9,8 +9,8 @@ public class OfferZoneTest extends BaseClass
 @Test
 public void offer()
 {
-	hp.offerZone("Bestsellers");
-	ozp.selectProduct("Boys Colourblock Pocket T-shirt");
+	hp.offerZone();
+	ozp.selectProduct("Boys Colourblock Pocket T-shirt", gutil);
 	pdp.clickonAddtoBasket();
 	cp.cart("562123");
 }

@@ -9,16 +9,15 @@ public class OfferZonePage
 {
 	AndroidDriver driver;
 	
-	
   public OfferZonePage(AndroidDriver driver)
   {
 	  this.driver=driver;
 	  PageFactory.initElements(driver, this);
   }
   
-  public void selectProduct(String product)
+  public void selectProduct(String product, GestureUtility gutil)
   {
-	  GestureUtility gutil= new GestureUtility(driver);
-	  gutil.scroll(product);
+	gutil.scroll(product);
+	
   }
 }

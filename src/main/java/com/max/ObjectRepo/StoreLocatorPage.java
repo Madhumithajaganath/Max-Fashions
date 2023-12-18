@@ -1,5 +1,8 @@
 package com.max.ObjectRepo;
 
+import java.util.List;
+import java.util.Set;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -27,7 +30,7 @@ public class StoreLocatorPage {
 	private WebElement city;
 	
 	@FindBy(id = "com.applications.max:id/lnrStoreInfo")
-	private WebElement storeAddress;
+	private List<WebElement> storeAddress;
 	
 	
 	public StoreLocatorPage(AndroidDriver driver) 
@@ -37,7 +40,6 @@ public class StoreLocatorPage {
 	}
 	
 	public void store() {
-		String address = storeAddress.getText();
-		System.out.println(address);
+		
 	}
 }
