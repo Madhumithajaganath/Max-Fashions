@@ -35,6 +35,7 @@ public class FavoritePage {
 	private WebElement cancelButton;
 	
 	public FavoritePage(AndroidDriver driver) {
+		this.driver=driver;
 		PageFactory.initElements( driver, this);
 	}
 	

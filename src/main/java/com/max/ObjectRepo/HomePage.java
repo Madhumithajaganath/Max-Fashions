@@ -4,6 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import GenericUtilities.GestureUtility;
 import io.appium.java_client.android.AndroidDriver;
 
 public class HomePage {
@@ -27,10 +28,13 @@ public class HomePage {
 	@FindBy(xpath="//android.widget.TextView[@text='Account']")
 	private WebElement Account;
 	
+	@FindBy(xpath="//android.view.ViewGroup[@resource-id='com.applications.max:id/llLandingItem']")
+	private WebElement flat199;
+	
 	public HomePage(AndroidDriver driver) 
 	{
 		this.driver=driver;
-PageFactory.initElements( driver, this);
+		PageFactory.initElements( driver, this);
 	}
 
 	public WebElement getHome() {
@@ -53,6 +57,10 @@ PageFactory.initElements( driver, this);
 		return Account;
 	}
 	
+	public WebElement getFlat199() {
+		return flat199;
+	}
+
 	public void ClickOnBasket()
 	{
 		Basket.click();
@@ -72,5 +80,12 @@ PageFactory.initElements( driver, this);
 	public void ClickOnFavourites()
 	{
 		Favourites.click();
+	}
+	public void offerZone(String text)
+	
+	{
+	    GestureUtility gutil=new GestureUtility(driver);
+	    gutil.scroll(text);
+	    flat199.click();
 	}
 }

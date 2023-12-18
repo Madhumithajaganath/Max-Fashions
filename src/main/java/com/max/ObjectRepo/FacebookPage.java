@@ -8,6 +8,7 @@ public class FacebookPage {
 
 	AndroidDriver driver;
 	public FacebookPage(AndroidDriver driver) {
+		this.driver=driver;
 		PageFactory.initElements( driver, this);
 	}
 	

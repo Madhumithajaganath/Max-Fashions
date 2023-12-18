@@ -16,6 +16,8 @@ public class CartPage {
 	@FindBy(xpath="//android.widget.TextView[@text='Men Solid Boxy Fit Casual Shirt']")
 	private WebElement productName;
 	
+	@FindBy(xpath="//android.widget.Button[@text='PROCEED']")
+	private WebElement proccedBtn;
 	
 	public CartPage(AndroidDriver driver) 
 	{
@@ -31,8 +33,9 @@ public class CartPage {
 		return productName;
 	}
 
-	public void cart(String phno) 
+	public void cart(String pinco) 
 	{
-		pincode.sendKeys(phno);
+		pincode.sendKeys(pinco);
+		proccedBtn.click();
 	}
 }
