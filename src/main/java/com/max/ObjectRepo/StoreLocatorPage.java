@@ -1,10 +1,20 @@
 package com.max.ObjectRepo;
 
+import java.util.List;
+
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.google.common.collect.ImmutableMap;
+
+import GenericUtilities.BaseClass;
+import GenericUtilities.GestureUtility;
+import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
+import net.bytebuddy.implementation.bytecode.ByteCodeAppender.Size;
 
 public class StoreLocatorPage {
 
@@ -27,17 +37,62 @@ public class StoreLocatorPage {
 	private WebElement city;
 	
 	@FindBy(id = "com.applications.max:id/lnrStoreInfo")
-	private WebElement storeAddress;
+	private List<WebElement> storeAddress;
 	
-	
+
 	public StoreLocatorPage(AndroidDriver driver) 
 	{
 		this.driver=driver;
+
 		PageFactory.initElements( driver, this);
 	}
 	
+	public AndroidDriver getDriver() {
+		return driver;
+	}
+
+	public WebElement getFindStores() {
+		return findStores;
+	}
+
+	public WebElement getStateSpinner() {
+		return stateSpinner;
+	}
+
+	public WebElement getCitySpinner() {
+		return citySpinner;
+	}
+
+	public WebElement getState() {
+		return state;
+	}
+
+	public WebElement getCity() {
+		return city;
+	}
+
+	public List<WebElement> getStoreAddress() {
+		return storeAddress;
+	}
+
 	public void store() {
-		String address = storeAddress.getText();
+		findStores.click();
+		stateSpinner.click();
+		citySpinner.click();
+		state.click();
+		city.click();
+		
+		driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Find our stores\"));"));
+		int count = storeAddress.size();
+		for(int i=0;i<count;i++)
+		{
+		String address = storeAddress.get(i).getText();
 		System.out.println(address);
+		((JavascriptExecutor) driver).executeScript("mobile: swipeGesture", ImmutableMap.of(
+			    "left", 100, "top", 100, "width", 100, "height", 100,
+			    "direction", "left",
+			    "percent", 0.75
+			));
+		}
 	}
 }
