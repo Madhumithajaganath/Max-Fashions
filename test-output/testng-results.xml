@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="1" total="2" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-18T12:55:43 IST" name="Default suite" finished-at="2023-12-18T12:57:25 IST" duration-ms="101446">
+  <suite started-at="2023-12-18T13:25:00 IST" name="Default suite" finished-at="2023-12-18T13:25:53 IST" duration-ms="52820">
     <groups>
     </groups>
-    <test started-at="2023-12-18T12:55:43 IST" name="Default test" finished-at="2023-12-18T12:57:25 IST" duration-ms="101446">
-      <class name="MaxFahions.OfferZoneTest">
-        <test-method is-config="true" signature="startServer()[pri:0, instance:MaxFahions.OfferZoneTest@783a467b]" started-at="2023-12-18T12:55:43 IST" name="startServer" finished-at="2023-12-18T12:55:43 IST" duration-ms="128" status="PASS">
+    <test started-at="2023-12-18T13:25:00 IST" name="Default test" finished-at="2023-12-18T13:25:53 IST" duration-ms="52820">
+      <class name="MaxFahions.TestScript">
+        <test-method is-config="true" signature="startServer()[pri:0, instance:MaxFahions.TestScript@272113c4]" started-at="2023-12-18T13:25:00 IST" name="startServer" finished-at="2023-12-18T13:25:00 IST" duration-ms="219" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startServer -->
-        <test-method is-config="true" signature="startApp()[pri:0, instance:MaxFahions.OfferZoneTest@783a467b]" started-at="2023-12-18T12:55:44 IST" name="startApp" finished-at="2023-12-18T12:55:59 IST" duration-ms="15106" status="PASS">
+        <test-method is-config="true" signature="startApp()[pri:0, instance:MaxFahions.TestScript@272113c4]" started-at="2023-12-18T13:25:00 IST" name="startApp" finished-at="2023-12-18T13:25:17 IST" duration-ms="16591" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startApp -->
-        <test-method signature="offer()[pri:0, instance:MaxFahions.OfferZoneTest@783a467b]" started-at="2023-12-18T12:55:59 IST" name="offer" finished-at="2023-12-18T12:57:24 IST" duration-ms="85848" status="FAIL">
+        <test-method signature="store()[pri:0, instance:MaxFahions.TestScript@272113c4]" started-at="2023-12-18T13:25:17 IST" name="store" finished-at="2023-12-18T13:25:53 IST" duration-ms="35788" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[An element could not be located on the page using the given search parameters.
@@ -23,9 +23,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.7.2', revision: '4d4020c3b7'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [511ed751-d6fb-4540-8f9b-5296290954e0, findElement {using=-android uiautomator, value=new UiScrollable(new UiSelector()).scrollIntoView(text("Bestsellers"));}]
+Command: [95761806-d51b-44b8-8a2a-e5a455270022, findElement {using=xpath, value=//android.widget.TextView[@text='Find our stores']}]
 Capabilities {appium:appActivity: com.landmarkgroup.landmarks..., appium:appPackage: com.applications.max, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.landmarkgroup.landmarks..., appPackage: com.applications.max, automationName: UiAutomator2, deviceName: Madhumitha jaganath, platformName: android, udid: RZ8T31JR73N}, appium:deviceApiLevel: 33, appium:deviceManufacturer: samsung, appium:deviceModel: SM-A325F, appium:deviceName: RZ8T31JR73N, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: RZ8T31JR73N, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:statBarHeight: 78, appium:takesScreenshot: true, appium:udid: RZ8T31JR73N, appium:viewportRect: {height: 2242, left: 0, top: 78, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 511ed751-d6fb-4540-8f9b-5296290954e0]]>
+Session ID: 95761806-d51b-44b8-8a2a-e5a455270022]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
@@ -33,9 +33,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.7.2', revision: '4d4020c3b7'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [511ed751-d6fb-4540-8f9b-5296290954e0, findElement {using=-android uiautomator, value=new UiScrollable(new UiSelector()).scrollIntoView(text("Bestsellers"));}]
+Command: [95761806-d51b-44b8-8a2a-e5a455270022, findElement {using=xpath, value=//android.widget.TextView[@text='Find our stores']}]
 Capabilities {appium:appActivity: com.landmarkgroup.landmarks..., appium:appPackage: com.applications.max, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.landmarkgroup.landmarks..., appPackage: com.applications.max, automationName: UiAutomator2, deviceName: Madhumitha jaganath, platformName: android, udid: RZ8T31JR73N}, appium:deviceApiLevel: 33, appium:deviceManufacturer: samsung, appium:deviceModel: SM-A325F, appium:deviceName: RZ8T31JR73N, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: RZ8T31JR73N, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:statBarHeight: 78, appium:takesScreenshot: true, appium:udid: RZ8T31JR73N, appium:viewportRect: {height: 2242, left: 0, top: 78, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 511ed751-d6fb-4540-8f9b-5296290954e0
+Session ID: 95761806-d51b-44b8-8a2a-e5a455270022
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -48,11 +48,14 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
 at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
-at com.max.ObjectRepo.HomePage.offerZone(HomePage.java:88)
-at MaxFahions.OfferZoneTest.offer(OfferZoneTest.java:12)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+at com.max.ObjectRepo.StoreLocatorPage.store(StoreLocatorPage.java:78)
+at MaxFahions.TestScript.store(TestScript.java:16)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -86,16 +89,16 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- offer -->
-        <test-method is-config="true" signature="closeApp()[pri:0, instance:MaxFahions.OfferZoneTest@783a467b]" started-at="2023-12-18T12:57:24 IST" name="closeApp" finished-at="2023-12-18T12:57:25 IST" duration-ms="455" status="PASS">
+        </test-method> <!-- store -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:MaxFahions.TestScript@272113c4]" started-at="2023-12-18T13:25:53 IST" name="closeApp" finished-at="2023-12-18T13:25:53 IST" duration-ms="402" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-        <test-method is-config="true" signature="stopServer()[pri:0, instance:MaxFahions.OfferZoneTest@783a467b]" started-at="2023-12-18T12:57:25 IST" name="stopServer" finished-at="2023-12-18T12:57:25 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="stopServer()[pri:0, instance:MaxFahions.TestScript@272113c4]" started-at="2023-12-18T13:25:53 IST" name="stopServer" finished-at="2023-12-18T13:25:53 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopServer -->
-      </class> <!-- MaxFahions.OfferZoneTest -->
+      </class> <!-- MaxFahions.TestScript -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="MaxFahions.OfferZoneTest">
+      <class name="MaxFahions.TestScript">
         <methods>
-          <include name="offer"/>
+          <include name="store"/>
           <include name="closeApp"/>
           <include name="stopServer"/>
           <include name="startServer"/>
           <include name="startApp"/>
         </methods>
-      </class> <!-- MaxFahions.OfferZoneTest -->
+      </class> <!-- MaxFahions.TestScript -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

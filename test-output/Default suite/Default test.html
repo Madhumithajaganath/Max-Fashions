@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Dec 18 12:55:43 IST 2023</td>
+<td>Started on:</td><td>Mon Dec 18 13:25:00 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>101 seconds (101446 ms)</td>
+<tr><td>Total time:</td><td>52 seconds (52820 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,15 +75,15 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='MaxFahions.OfferZoneTest.offer()'><b>offer</b><br>Test class: MaxFahions.OfferZoneTest</td>
+<td title='MaxFahions.TestScript.store()'><b>store</b><br>Test class: MaxFahions.TestScript</td>
 <td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [511ed751-d6fb-4540-8f9b-5296290954e0, findElement {using=-android uiautomator, value=new UiScrollable(new UiSelector()).scrollIntoView(text(&quot;Bestsellers&quot;));}]
+Command: [95761806-d51b-44b8-8a2a-e5a455270022, findElement {using=xpath, value=//android.widget.TextView[@text=&apos;Find our stores&apos;]}]
 Capabilities {appium:appActivity: com.landmarkgroup.landmarks..., appium:appPackage: com.applications.max, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.landmarkgroup.landmarks..., appPackage: com.applications.max, automationName: UiAutomator2, deviceName: Madhumitha jaganath, platformName: android, udid: RZ8T31JR73N}, appium:deviceApiLevel: 33, appium:deviceManufacturer: samsung, appium:deviceModel: SM-A325F, appium:deviceName: RZ8T31JR73N, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: RZ8T31JR73N, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:statBarHeight: 78, appium:takesScreenshot: true, appium:udid: RZ8T31JR73N, appium:viewportRect: {height: 2242, left: 0, top: 78, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 511ed751-d6fb-4540-8f9b-5296290954e0
+Session ID: 95761806-d51b-44b8-8a2a-e5a455270022
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -96,11 +96,14 @@ Session ID: 511ed751-d6fb-4540-8f9b-5296290954e0
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
 	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
-	at com.max.ObjectRepo.HomePage.offerZone(HomePage.java:88)
-	at MaxFahions.OfferZoneTest.offer(OfferZoneTest.java:12)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at com.max.ObjectRepo.StoreLocatorPage.store(StoreLocatorPage.java:78)
+	at MaxFahions.TestScript.store(TestScript.java:16)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -129,15 +132,15 @@ Session ID: 511ed751-d6fb-4540-8f9b-5296290954e0
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1580153829", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1580153829'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+</pre></div><a href='#' onClick='toggleBox("stack-trace148353618", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace148353618'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [511ed751-d6fb-4540-8f9b-5296290954e0, findElement {using=-android uiautomator, value=new UiScrollable(new UiSelector()).scrollIntoView(text(&quot;Bestsellers&quot;));}]
+Command: [95761806-d51b-44b8-8a2a-e5a455270022, findElement {using=xpath, value=//android.widget.TextView[@text=&apos;Find our stores&apos;]}]
 Capabilities {appium:appActivity: com.landmarkgroup.landmarks..., appium:appPackage: com.applications.max, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.landmarkgroup.landmarks..., appPackage: com.applications.max, automationName: UiAutomator2, deviceName: Madhumitha jaganath, platformName: android, udid: RZ8T31JR73N}, appium:deviceApiLevel: 33, appium:deviceManufacturer: samsung, appium:deviceModel: SM-A325F, appium:deviceName: RZ8T31JR73N, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: RZ8T31JR73N, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:statBarHeight: 78, appium:takesScreenshot: true, appium:udid: RZ8T31JR73N, appium:viewportRect: {height: 2242, left: 0, top: 78, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 511ed751-d6fb-4540-8f9b-5296290954e0
+Session ID: 95761806-d51b-44b8-8a2a-e5a455270022
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -150,11 +153,14 @@ Session ID: 511ed751-d6fb-4540-8f9b-5296290954e0
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
 	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
-	at com.max.ObjectRepo.HomePage.offerZone(HomePage.java:88)
-	at MaxFahions.OfferZoneTest.offer(OfferZoneTest.java:12)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at com.max.ObjectRepo.StoreLocatorPage.store(StoreLocatorPage.java:78)
+	at MaxFahions.TestScript.store(TestScript.java:16)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -184,8 +190,8 @@ Session ID: 511ed751-d6fb-4540-8f9b-5296290954e0
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>85</td>
-<td>MaxFahions.OfferZoneTest@783a467b</td></tr>
+<td>35</td>
+<td>MaxFahions.TestScript@272113c4</td></tr>
 </table><p>
 </body>
 </html>

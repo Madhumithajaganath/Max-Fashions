@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\HI\AppData\Local\Temp\testng-eclipse-1273887923\testng-customsuite.xml</span>
+                    <span>C:\Users\HI\AppData\Local\Temp\testng-eclipse--1747026933\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -104,7 +104,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="MaxFahions.OfferZoneTest" class="method navigator-link" hash-for-method="offer">offer</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="MaxFahions.TestScript" class="method navigator-link" hash-for-method="store">store</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -122,22 +122,22 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">MaxFahions.OfferZoneTest</span>
+              <span class="class-name">MaxFahions.TestScript</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="offer">
-                  </a> <!-- offer -->
-                  <span class="method-name">offer</span>
+                  <a name="store">
+                  </a> <!-- store -->
+                  <span class="method-name">store</span>
                   <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [511ed751-d6fb-4540-8f9b-5296290954e0, findElement {using=-android uiautomator, value=new UiScrollable(new UiSelector()).scrollIntoView(text(&quot;Bestsellers&quot;));}]
+Command: [95761806-d51b-44b8-8a2a-e5a455270022, findElement {using=xpath, value=//android.widget.TextView[@text=&apos;Find our stores&apos;]}]
 Capabilities {appium:appActivity: com.landmarkgroup.landmarks..., appium:appPackage: com.applications.max, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.landmarkgroup.landmarks..., appPackage: com.applications.max, automationName: UiAutomator2, deviceName: Madhumitha jaganath, platformName: android, udid: RZ8T31JR73N}, appium:deviceApiLevel: 33, appium:deviceManufacturer: samsung, appium:deviceModel: SM-A325F, appium:deviceName: RZ8T31JR73N, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: RZ8T31JR73N, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:statBarHeight: 78, appium:takesScreenshot: true, appium:udid: RZ8T31JR73N, appium:viewportRect: {height: 2242, left: 0, top: 78, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 511ed751-d6fb-4540-8f9b-5296290954e0
+Session ID: 95761806-d51b-44b8-8a2a-e5a455270022
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -150,11 +150,14 @@ Session ID: 511ed751-d6fb-4540-8f9b-5296290954e0
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
 	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
-	at com.max.ObjectRepo.HomePage.offerZone(HomePage.java:88)
-	at MaxFahions.OfferZoneTest.offer(OfferZoneTest.java:12)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at com.max.ObjectRepo.StoreLocatorPage.store(StoreLocatorPage.java:78)
+	at MaxFahions.TestScript.store(TestScript.java:16)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -192,7 +195,7 @@ Session ID: 511ed751-d6fb-4540-8f9b-5296290954e0
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\HI\AppData\Local\Temp\testng-eclipse-1273887923\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\HI\AppData\Local\Temp\testng-eclipse--1747026933\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -201,11 +204,11 @@ Session ID: 511ed751-d6fb-4540-8f9b-5296290954e0
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;MaxFahions.OfferZoneTest&quot;&gt;
+      &lt;class name=&quot;MaxFahions.TestScript&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;offer&quot;/&gt;
+          &lt;include name=&quot;store&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- MaxFahions.OfferZoneTest --&gt;
+      &lt;/class&gt; &lt;!-- MaxFahions.TestScript --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -247,14 +250,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'offer')
-data.setCell(0, 2, 'MaxFahions.OfferZoneTest')
-data.setCell(0, 3, 85848);
+data.setCell(0, 1, 'store')
+data.setCell(0, 2, 'MaxFahions.TestScript')
+data.setCell(0, 3, 35788);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 35 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -269,9 +272,16 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">MaxFahions.TestScript</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">search</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_suite" class="panel">
@@ -280,28 +290,28 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">MaxFahions.OfferZoneTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">MaxFahions.TestScript</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">startServer</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">startApp</span>
-                <span class="method-start">152 ms</span>
+                <span class="method-start">247 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">offer</span>
-                <span class="method-start">15270 ms</span>
+                <span class="method-name">store</span>
+                <span class="method-start">16844 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">closeApp</span>
-                <span class="method-start">101122 ms</span>
+                <span class="method-start">52637 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-suite after">
                 <span class="method-name">stopServer</span>
-                <span class="method-start">101648 ms</span>
+                <span class="method-start">53109 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -10,4 +10,9 @@ public class TestScript extends BaseClass{
 	public void search() throws Throwable {
 		cat.categories("maxi");
 	}
+	
+	@Test
+	public void store() {
+		slp.store();
+	}
 }
