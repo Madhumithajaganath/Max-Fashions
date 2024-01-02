@@ -56,5 +56,4 @@ public class GirlsFashionPage {
 		wishlistBtn.click();
 	}
 	
-
 }
